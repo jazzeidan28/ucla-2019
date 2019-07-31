@@ -25,32 +25,34 @@ print("  1 - subtract")
 print("  2 - multiply")
 print("  3 - divide")
 print("Enter a number to choose an operation: \n")
-op = int(input())
 
-a = int(input())
-b = int(input())
+op =""
+while op != "quit":
+    op = int(input("Enter a number to choose an operation"))
 
-item = ""
-while item != "quit":
-    print("Enter an item to check the price: ")
-    item = input()
-
-    if item == "pizza":
-        print("$3 per slice")
-    else:
-        print("We don't have that.")
-        
-if op == 0: #need to add
-    print("a + b =",a+b)
-elif op == 1: #need to subtract
-    print("a - b =",a-b)
-elif op == 2: #need to multiply
-    print("a * b",a*b)
-elif op == 3: #need to divide
-    print("a / b",a/b)
-
-
-
-
+    if op <=4:
+        a = (input())
+        b = (input())
+    elif (op) <= 7:
+        a = (input("Enter your first input: ")
+    elif op == 0: #need to add
+        print("a + b =",a+b)
+    elif op == 1: #need to subtract
+        print("a - b =",a-b)
+    elif op == 2: #need to multiply
+        print("a * b",a*b)
+    elif op == 3: #need to divide
+        print("a / b",a/b)
+    elif op == 4: #need to power
+        print()
+        elif op == 5: #need to sqrt
+        print("sqrt(a) ="a**(1/2))
+    elif op == "6":
+        i = 1
+        factorial = 1
+        while i < a+1:
+        factorial = factorial * i
+            i = i+1
+        print("a-factorial is", factorial)
 
 #END OF CALCULATOR
